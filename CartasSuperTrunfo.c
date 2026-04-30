@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <locale.h>
-#include <windows.h>
 #include <string.h>
 
 void limparBuffer() {
@@ -9,10 +8,6 @@ void limparBuffer() {
 }
 
 int main() {
-        // Configura o console para UTF-8
-        SetConsoleCP(65001);
-        SetConsoleOutputCP(65001);
-        setlocale(LC_ALL, "pt_BR.UTF-8");
         char estado1[20]; // Variável para armazenar o nome do estado
         char codigo_carta1[20]; // Variável para armazenar o código da carta (inicial do estado + número)
         float populacao1; // Variável para armazenar a população
